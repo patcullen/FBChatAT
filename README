@@ -4,6 +4,10 @@ This tool was designed to help people trying to communicate over a language barr
 
 Till then, hopefully this helps.
 
+This tool works by altering your Facebook page in two ways:
+To understand receiving chat messages, FBChatAT will automatically attempt to translate all messages to your native language. The translated text will be added underneath the original chat message.
+To type in a foreign language, FBChatAT adds a field on the bottom left of your page. When you type in here, your text will be automatically translated to the foreign language of your choice and shown above your original text. If and when you are happy with your message, you can simply press 'enter' to have the translated text moved to the current active chat flyout. For the message to be actually sent, you will need to press 'enter' again.
+
 To install the extension:
 - Bring up the extensions management page by clicking the wrench icon and choosing Tools > Extensions. (On Mac, use Window > Extensions.)
 - If Developer mode has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.
