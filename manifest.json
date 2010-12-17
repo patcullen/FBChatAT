@@ -1,0 +1,31 @@
+{
+  "name": "FBChatAT",
+  "version": "1.0",
+  "description": "Facebook Chat Auto-Translation",
+  "icons": {
+  	"16": "fb16.png",
+    "48": "fb48.png",
+    "128": "fb128.png"
+  },
+  "browser_action": {
+    "default_icon": "fb48.png",
+    "default_title": "FBChatAT",
+    "default_popup": "popup.html"
+  },
+  "background_page": "background.html",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/*"],
+      "css": ["chatter.css"],
+      "js": [
+      	"mootools-core-1.3-full-compat.js", 
+      	"ScannerKeystrokeObserver.js",
+      	"chatter.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://ajax.googleapis.com/"
+  ]
+}

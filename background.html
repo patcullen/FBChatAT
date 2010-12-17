@@ -1,0 +1,33 @@
+<html>
+<script src="google.js" ></script>
+<script>
+google.load("language", "1");
+
+chrome.extension.onRequest.addListener(
+  function(request, sender, sendResponse) {
+	  var flag = false;
+	  var vn = localStorage["vNative"];
+	  var vf = localStorage["vForeign"];
+	  if ((vn == undefined) || (vn == null)) vn = 'en';
+	  if ((vf == undefined) || (vf == null)) vf = 'zh-TW';
+    if (request.service == "translateout") {
+  			google.language.translate(request.text, vn, vf, function(result) {
+	      sendResponse({translation: result.translation});
+			});
+			flag = true;
+    }
+    if (request.service == "translatein") {
+			google.language.translate(request.text, vf, vn, function(result) {
+	      sendResponse({translation: result.translation});
+			});
+			flag = true;
+    }
+    if (!flag) {
+      sendResponse({});
+    }
+  }
+);
+
+</script>
+</html>
+
