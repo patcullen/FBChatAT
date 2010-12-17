@@ -1,10 +1,14 @@
 Facebook Chat Auto-Translator
 
-This tool was designed to help people trying to communicate over a 
-language barrier. Hopefully sometime soon Facebook will design an 
-official tool to help our global community communicate even smarter. 
+This tool was designed to help people trying to communicate over a language barrier. Hopefully sometime soon Facebook will design an official tool to help our global community communicate even smarter. 
 
 Till then, hopefully this helps.
 
-To change your langauge settings in Chrome, right-click on the 
-Facebook toolbar button and select 'Options'.
+To install the extension:
+- Bring up the extensions management page by clicking the wrench icon and choosing Tools > Extensions. (On Mac, use Window > Extensions.)
+- If Developer mode has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.
+- Click the Load unpacked extension button. A file dialog appears.
+- In the file dialog, navigate to the extension's folder and click OK.
+
+Customizing the extension:
+To change the langauge settings for FBChatAT: in Chrome, right-click on the Facebook toolbar button and select 'Options'.
