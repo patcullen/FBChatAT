@@ -3,6 +3,7 @@
 	bottom: 0px; left: 20px; width: 400px; height: 40px;
 	border: 1px solid #999;
 	border-bottom: 0px solid #999;
+	background-color: #fcfcfc;
 	background-image: url(chrome-extension://lbkladmmoehjdmmhkecdoginakfbcifg/fbbits.png);
 	background-repeat: repeat-x;
 	color: #222;
